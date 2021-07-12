@@ -17,10 +17,10 @@ function PassCheck() {
 }
 
 function mailCheck() {
-  if (mail.includes("@")) {
-    errorMail.style.display = "none";
-  } else {
+  if (mail.value === "") {
     errorMail.style.display = "block";
+  } else {
+    errorMail.style.display = "none";
   }
 }
 
